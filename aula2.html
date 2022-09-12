@@ -1,0 +1,1724 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8" />
+	<!-- Always force latest IE rendering engine & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Curso - Metodologia da Pesquisa Científica</title>
+	<meta content="index, follow" name="robots">
+	<meta name="keywords" content="metodologia científica, método, fiocruz, ciência">
+	<meta name="description" content="Aula 2 do Curso sobre Metodologia Científica - Entendendo a Ciência">
+	<meta name="author" content="Fundação Oswaldo Cruz - Fiocruz">
+
+	<!-- Responsive and mobile friendly stuff -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- Bootstrap CSS -->
+	<link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	<!--slider-->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js" type="text/javascript"></script>
+	<!-- JS das Atividades (H5p) -->
+	<script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+
+
+
+	<!-- Favicons -->
+	<link href="https://portal.fiocruz.br/sites/portal.fiocruz.br/themes/portalnovo/images/favicon.ico" rel="icon">
+	<link href="https://portal.fiocruz.br/sites/portal.fiocruz.br/themes/portalnovo/images/indice.jpg"
+		rel="apple-touch-icon">
+
+	<!-- Google Fonts -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i"
+		rel="stylesheet">
+
+	<!-- Biblioteca CSS -->
+	<link href="assets/lib/animate/animate.min.css" rel="stylesheet">
+	<link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+	<link rel="stylesheet" type="text/css" href="assets/slick2/slick.css">
+	<link rel="stylesheet" type="text/css" href="assets/slick2/slick-theme.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+	<!--Ionicons-->
+	<link href="assets/lib/aos/aos.css" rel="stylesheet">
+	<link href="assets/lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<!-- 	<link rel="stylesheet" type="text/css" href="assets/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"> -->
+	<script src="assets/js/include.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-accessible-dialog-tooltip-aria.js"></script>
+	<!-- JS das Atividades (H5p) -->
+	<script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+
+	<script>
+		AOS.init();
+		duration: 699;
+		once: true;
+
+	</script>
+
+
+	<style type="text/css">
+		.myslider {
+			background-color: transparent;
+			width: 80%;
+			height: auto;
+			align-content: center;
+			text-align: center;
+		}
+
+		.slider {
+			max-width: 80%;
+			padding: 0;
+			height: auto;
+			color: #fff;
+			margin-top: 5px;
+		}
+
+		.slider a {
+			text-decoration: none;
+		}
+
+		.slider a:active {
+			text-decoration: none;
+		}
+
+		.slider a:hover {
+			text-decoration: none;
+		}
+
+
+		.slider button {
+			border: 0px;
+			box-sizing: content-box;
+			background: transparent;
+			transition: all 0.3s ease-in-out;
+			border: none;
+			text-decoration: none;
+			border: none !important;
+			outline: none;
+			box-shadow: none;
+		}
+
+		.slider button :active {
+			border: 0px;
+			box-sizing: content-box;
+			text-decoration: none;
+			border: none !important;
+			outline: none;
+			box-shadow: none;
+		}
+
+		.slick-slide {
+			margin: 0px;
+		}
+
+		.slick-slide img {
+			width: 100%;
+			height: 70%;
+		}
+
+		.slick-prev:before,
+		.slick-next:before {
+			color: #de8245;
+			transform: rotate(-30deg);
+			background: transparent;
+			opacity: .6;
+			transition: all 0.3s ease-in-out;
+			border: none;
+			text-decoration: none;
+			border: none !important;
+			outline: none;
+			box-shadow: none;
+		}
+
+
+		.slick-slide {
+			transition: all ease-in-out .3s;
+			opacity: .2;
+		}
+
+		.slick-active {
+			opacity: .5;
+		}
+
+		.slick-current {
+			opacity: 1;
+		}
+
+		.slick-prev .slick-arrow button {
+			text-decoration: none;
+			border: 0px;
+
+		}
+
+		.slick-dots ul {
+			border: none !important;
+			color: #FFF;
+		}
+
+		.slick-dots li {
+			border: none !important;
+			color: #FFF;
+		}
+
+		.slick-dots li button {
+			border: none !important;
+			outline: none;
+			box-shadow: none;
+			color: #de8245;
+		}
+
+		.label {
+			font: inherit;
+		}
+
+		.carousel-indicators {
+			position: absolute;
+			bottom: -15px;
+			left: 50%;
+			z-index: 10;
+			vertical-align: bottom;
+			width: 60%;
+			padding-left: 0;
+			margin-left: -30%;
+			text-align: center;
+			list-style: none;
+
+		}
+
+		.carousel-indicators>li {
+			display: inline-block;
+
+			vertical-align: bottom;
+			width: 12px;
+			height: 12px;
+			margin: 3px;
+			text-indent: -999px;
+			cursor: pointer;
+			background-color: #000 \9;
+			background-color: rgba(0, 0, 0, 0);
+			border: 1px solid #de8245;
+			border-radius: 10px;
+		}
+
+		.carousel-indicators>li.active {
+			width: 12px;
+			height: 12px;
+			margin: 3px;
+			background-color: #de8245;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<!-- Note: The "styleN" class below should match that of the banner element. -->
+		<header id="header" class="alt style2 text-nowrap" role="banner">
+			<a href="index.html" class="logo"><img src="images/logoAula.png" alt="logo do Campus Virtual Fiocruz"
+					class="logo img-fluid" />&nbsp;<strong>Metodologia da</strong> <span>Pesquisa Científica</span></a>
+
+			<nav>
+				<ul class="icons">
+					<ul class="icons">
+						<li><a href="index.html"><i class="icon solid fa-home"></i></a></li>
+					</ul>
+				</ul>
+				<a href="#menu">Tópicos</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="#entendendoprojeto">Entendendo o projeto</a></li>
+				<li><a href="#metodo">Método x Metodologia</a></li>
+				<li><a href="#naturezapesquisa">Natureza da pesquisa</a></li>
+				<li><a href="#abordagens">Abordagens</a></li>
+				<li><a href="#tipospesquisa">Tipos de pesquisa</a></li>
+				<li><a href="#procedimentospesquisa">Procedimentos da Pesquisa</a></li>
+				<li><a href="#instrumentos">Instrumentos de coleta</a></li>
+				<li><a href="#tecnicas">Técninas de análise dos dados</a></li>
+				<li><a href="#qualidade">Qualidade dos estudos</a></li>
+				<li><a href="#resumo">Resumo da aula</a></li>
+				<li><a href="#atividade">Atividade</a></li>
+			</ul>
+
+		</nav>
+
+		<!-- Banner -->
+		<!-- Note: The "styleN" class below should match that of the header element. -->
+		<section id="banner" class="style2" role="banner" style="max-width: 100%;">
+			<div class="inner">
+				<span class="image">
+					<img src="images/pic07.jpg" alt="Imagem do banner ilustrando uma pesquisadora no laboratório" />
+				</span>
+				<div class="row" role="menu text-wrap" style="max-width:100%;">
+					<ul class="actions" style="max-width:100%;">
+						<li style="max-width:100%;"><a href="aula1.html" class="button">Aula 1</a></li>
+						<li style="max-width:100%;"><a href="aula2.html" class="button primary">Aula 2</a></li>
+						<li style="max-width:100%;"><a href="aula3.html" class="button">Aula 3</a></li>
+						<li style="max-width:100%;"><a href="aula4.html" class="button">Aula 4</a></li>
+					</ul>
+				</div>
+				<header class="major">
+					<h1>Aula 2: Desenvolvendo o Projeto </h1>
+				</header>
+				<div class="content">
+					<p></p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Main -->
+		<div id="main" role="main">
+
+			<!-- One Objetivos -->
+			<section id="objetvos">
+				<div class="inner">
+					<header class="major" style="max-width: 100%;">
+						<h2>Ao final desta aula, você será capaz de:</h2>
+					</header>
+					<ul role="listitem">
+						<li>Diferenciar método de metodologia;</li>
+						<li>Distinguir os diferentes tipos de métodos científicos; </li>
+						<li>Usar as abordagens quantitativas e qualitativas em um projeto de pesquisa;</li>
+						<li>Escolher o tipo de pesquisa que mais se adequa a um projeto de pesquisa.</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Two metodo e metodologia-->
+
+			<section id="entendendoprojeto" class="spotlights">
+
+				<section role="article">
+					<figure>
+						<span class="image fit"><img src="images/arrows2.png"
+								alt="Diagrama que representa todas as etapas da elaboração de um projeto"
+								data-position="center center" /></span>
+						<figcaption> &nbsp;Fonte: <a
+								href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2023445">Pixabay</a>
+						</figcaption>
+					</figure>
+
+					<div class="content" data-aos="zoom-in">
+						<div class="inner">
+							<header class="major">
+								<h3>Desenvolvendo o Projeto</h3>
+							</header>
+							<p>Vamos iniciar nossa aula fazendo uma reflexão com base na seguinte analogia:
+							</p>
+							<div class="box" data-aos="zoom-in">
+								<p>Cozinhas são muito parecidas com espaços de pesquisa. Podemos usar alguns
+									conhecimentos e técnicas para testar novas receitas, não é mesmo?
+									Exercemos nossa criatividade dentro dos limites que a arte culinária nos permite.
+									Assim ocorre com a pergunta da pesquisa: quais os limites, regras e técnicas podemos
+									utilizar
+									para iniciar o nosso projeto?
+								</p>
+							</div>
+							<p>A partir de agora, você descobrirá as diferentes formas de responder às perguntas da
+								pesquisa que geram resultados confiáveis.
+							</p>
+							<!--fim da coluna-->
+						</div><!-- fim da row-->
+					</div>
+
+				</section>
+				<section>
+
+					<figure><span class="image fit">
+							<img src="images/method2.png"></span>
+						<figcaption>&nbsp;Fonte: <a href="https://storyset.com/work">Storyset</a></figcaption>
+					</figure>
+					</figure>
+
+					<div class="content">
+						<div class="inner">
+							<header class="major">
+								<h3>Método x Metodologia </h3>
+							</header>
+							<div class="box">
+								<h4>MÉTODO</h4>
+								<p>
+									“Methodos” significa “caminho para chegar a um fim”. Logo, método é o caminho
+									percorrido até o destino.
+									Por consequência, o <strong>Método Científico</strong> é o conjunto de
+									<strong>procedimentos (caminhos)
+										escolhidos e/ou desenvolvidos com
+										critérios bem definidos</strong>, cujos resultados ajudam para a
+									geração do conhecimento científico. Trata-se dos procedimentos e técnicas escolhidos
+									para investigar um fenômeno.
+								</p>
+							</div>
+							<p style="text-align: center;"><i class="fas fa-3x fa-caret-square-down"
+									style="color:#de8245;"></i></p>
+							<div class="box">
+								<h4>METODOLOGIA</h4>
+								<p> Metodologia, por ser a junção das palavras methodos e logos (razão, regra,
+									linguagem),
+									retrata a validação dos métodos escolhidos e/ou desenvolvidos, a partir do
+									entendimento
+									sistêmico da necessidade de aplicação do método. Logo, <strong>Metodologia
+										Científica é todo
+										o
+										conjunto de fatores teóricos e práticos que sustenta os métodos escolhidos para
+										alcançar
+										os resultados da pesquisa.</strong>
+								</p>
+							</div>
+
+						</div>
+					</div>
+				</section>
+
+			</section>
+
+			<!--start desction metodo-->
+
+			<!--end section metodo-->
+			<!--End section entendendo o projeto-->
+
+			<!-- Start Topic  metodo metodologia-->
+			<section id="metodometodologia">
+				<div class="inner">
+					<div class="row" style="padding:0;margin-bottom: 0;">
+						<p><strong>Lembra da analogia que fizemos no início da aula?</strong> <br /> <br /> O
+							conhecimento nos permite fazer nossas
+							próprias adaptações na receita e, a partir do mesmo método, chegar a resultados diferentes.
+							Na pesquisa científica ocorre o mesmo: usamos uma mesma receita (<strong>método</strong>)
+							com
+							ingredientes
+							diferentes
+							(<strong>conhecimentos</strong>) para gerar novos alimentos (<strong>novo
+								conhecimento</strong>), o modo como os <strong>resultados serão analisados</strong>
+							e como o <strong>novo conhecimento será apresentado</strong>.
+						</p>
+					</div>
+					
+					<div class="container" style="padding:0;margin-top: 0;">
+                        <div class="row justify-content-center" style="padding:0;">
+                            <div class="col-md-8 center-block text-center" style="padding:0;">
+                                <hr  style="padding:0;margin:3px"/>
+                                <p><br />
+									A metodologia aplicada para responder à pergunta pode ser classificada
+									de diferentes
+									formas que ajudam a <strong>organizar para os métodos que serão empregados;</strong>
+                                </p>
+                                <hr />
+                            </div>
+                        </div>
+
+                    </div>
+
+					<div class="row">
+						<p>Cada autor divide e define a metodologia científica de uma forma. O quadro abaixo resume
+							as diferentes definições que usaremos nesta aula.
+						</p>
+					</div>
+					<div class="row justify-content-center">
+						<div class="row col-md-10 justify-content-center">
+							<div class="col" style="padding-bottom: 0;margin-bottom: 0;">
+								<figure  style="padding-bottom: 0;margin-bottom: 0;">
+									<span class="image fit"
+										style="align-items: center;align-content: center;text-align: center; margin-bottom: 0;padding-bottom: 0;">
+										<img src="images/imagens-08.svg" style="padding-bottom: 0; margin-bottom: 0;"></span>
+									 <figcaption style="padding-left: 1em;padding-top: 0;margin-top: 0;line-height: 0;">
+									Fonte: Eduarda Cesse e Mariana Souza (2022)</figcaption> 
+								</figure>
+								<!-- <p style="padding-left: 1em;padding-top: 0;margin-top: 0;">Fonte: Eduarda Cesse e Mariana Souza (2022)</p> -->
+							</div>
+						</div>
+					</div>
+					<!--início carousel-->
+					<!--fim do carousel-->
+
+					<aside aria-details="sugestão de leitura complementar para o assunto do curso">
+						<div class="row justify-content-center mt-5">
+							<div class="row col-md-10 box justify-content-center">
+								<div class="col-sm">
+									<h2><strong>Sugestão de leitura</strong> <i class="fas fa-book-reader"
+											style="color:#de8245;"> </i></h2>
+									<p>
+										O ciclo de geração do conhecimento, desde a identificação do objeto de estudo
+										até a
+										solução ou
+										interpretação dele só se completa com a divulgação do novo conhecimento. De nada
+										adianta o
+										conhecimento
+										não compartilhado.
+										<br /> Atualmente o compartilhamento do conhecimento pode ser feito de
+										diversas
+										formas.
+										Independente das formas de divulgação, dois pilares devem ser sempre
+										respeitados:
+										o conceito de <strong>Ciência Aberta</strong> e a <strong>Conduta Responsável em
+											Pesquisa</strong>.
+									</p>
+									<p>Para ampliar seu conhecimento sobre o tema, sugerimos a leitura do
+										<a
+											href="https://www.arca.fiocruz.br/bitstream/icict/24117/2/Livro-Verde-07-06-2018.pdf">
+											<span
+												style="background-color: #de8245; color: #FFF; font-size: 14px; padding: 2px;">Livro
+												Verde
+												- Ciência aberta e
+												dados abertos: mapeamento e análise de políticas, infraestruturas e
+												estratégias em
+												perspectiva
+												nacional e internacional</span></a>, organizado por Paula Xavier.
+									</p>
+								</div>
+								<div class="col-sm justify-content-center"
+									style="align-items: center; text-align: center;">
+									<!--capa do livro-->
+									<figure>
+										<span class="image-capa">
+											<a
+												href="https://www.arca.fiocruz.br/bitstream/icict/24117/2/Livro-Verde-07-06-2018.pdf">
+												<img src="images/capa_verde.png" style="max-width:90%" alt="Livro Verde - Ciência aberta e 
+												dados abertos: mapeamento e análise de políticas, infraestruturas e estratégias em perspectiva 
+												nacional e internacional" data-position="center center"></a>
+										</span>
+									</figure>
+									<p class="source text-left">&nbsp;&nbsp;&nbsp;&nbsp;Fonte: <a
+											href="https://www.arca.fiocruz.br/handle/icict/24117"
+											target="_blank">Repositório Arca Fiocruz</a>.</p>
+									<!--Fim de capa-->
+								</div>
+							</div>
+						</div>
+					</aside>
+					<!--fim da coluna imagem-->
+				</div>
+				<!--fim da linha  -->
+				<div class="inner" style="margin-top: 0;padding-top: 0;">
+					<hr style="margin-top: 0;padding-top: 0;" />
+					<header>
+						<h4>Tipos de Métodos Científicos </h4>
+					</header>
+					<p>Se considerarmos a história do ser humano e a sua relação com a busca pelo conhecimento,
+						notaremos três
+						grandes caminhos trilhados pelos cientistas:</p>
+
+					<div class="row justify-content-center mt-3">
+						<div class="col-12 col-lg-6">
+							<details
+								aria-label="para ler a descrição do método dedutivo é necessário clicar neste botão">
+								<summary>Método Dedutivo <i class="fas fa-arrow-alt-circle-down"
+										style="color:#fff;padding-left: 5px;"
+										aria-label="clique para ler o conteúdo que descreve este item"></i>
+								</summary>
+								<p>
+									Atribui-se a René Descartes (1596-1650) a apresentação do método
+									dedutivo a
+									partir da matemática e de suas regras de evidência, análise, síntese e enumeração.
+									Parte da
+									observação de fenômenos grandes e imutáveis e, em seguida, buscam uma explicação. É
+									um método
+									muito comum de ser usado em ciências exatas como a física e a matemática, ciências
+									que têm seus
+									princípios baseados em leis imutáveis. Por este mesmo motivo é um método difícil de
+									ser usado em
+									ciências humanas e da saúde, áreas que estão em eterna construção e reformulação.
+								</p>
+							</details>
+							<details
+								aria-label="para ler a descrição do método indutivo é necessário clicar neste botão">
+								<summary>Método Indutivo <i class="fas fa-arrow-alt-circle-down"
+										style="color:#fff;padding-left: 5px;"
+										aria-label="clique para ler o conteúdo que descreve este item"></i></summary>
+								<p>A sistematização do método indutivo é atribuída a Francis Bacon
+									(1521-1526) e
+									funciona no sentido oposto ao método dedutivo, ou seja, parte da observação de um
+									fenômeno menor
+									e, em seguida, tenta generalizar a observação. Para isso, o cientista que usa o
+									método indutivo
+									deve observar detalhes sobre o fenômeno como frequência, intensidade, circunstâncias
+									etc. <br />
+									A partir da observação, é formulada uma hipótese explicativa que apenas sugere uma
+									explicação
+									para o fenômeno. Este método foi de suma importância para o desenvolvimento das
+									Ciências Sociais
+									e da Saúde, pois se baseia na observação de pequenos fenômenos.
+								</p>
+							</details>
+							<details
+								aria-label="para ler a descrição do método hipotético-dedutivo é necessário clicar neste botão">
+								<summary>Método Hipotético-Dedutivo <i class="fas fa-arrow-alt-circle-down"
+										style="color:#fff;padding-left: 5px;"></i></summary>
+								<p>Em determinado momento da história da ciência,
+									a indução já não mais satisfazia a necessidade da certeza do conhecimento.
+									Filósofos como David Hume (1711-1776) começaram a sugerir que ao
+									método
+									indutivo deveria ser associado a possibilidade de testar a hipótese formulada. Desta
+									forma,
+									nasce o método hipotético-dedutivo baseado nos modelos, técnicas e outras abordagens
+									que
+									permitem o teste de hipóteses. É do método hipotético-dedutivo que as Ciências
+									Sociais e da
+									Saúde mais geram conhecimento.
+								</p>
+							</details> <!-- fim da área de detalhes-->
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<!--end topic metodo metodologias-->
+
+			<!-- Start Section Three naturezapesquisa -->
+			<section id="naturezapesquisa">
+
+				<div class="inner" data-aos="zoom-in">
+					<article>
+						<header class="major">
+							<h3>Natureza da Pesquisa</h3>
+						</header>
+						<p>A pesquisa é a atividade nuclear da ciência, por essência inacabada, que permite a
+							intervenção na realizada.
+						</p>
+
+						<p>Por ter essa definição, dividimos a natureza da pesquisa de duas maneiras: <strong>pesquisa
+								básica e
+								pesquisa aplicada.</strong></p>
+						<p><strong>A pesquisa básica</strong> é mais teórica, sem possibilidade de uma aplicação mais
+							prática
+							imediata. </p>
+						<aside class="boxx" data-aos="zoom-in">
+							<div class="row">
+								<p>
+									<i class="fas  fa-exclamation-circle" style="color:#de8245;"></i>&nbsp;&nbsp;
+									<b>Características da pesquisa básica:</b><br />
+									Gera conhecimentos novos e úteis para o avanço da Ciência.
+									Envolve verdades e interesses universais e serve de subsídio para a pesquisa
+									aplicada.
+								</p>
+							</div>
+						</aside>
+						<p>Já a <strong>pesquisa aplicada</strong> trata de pesquisas práticas, a fim de solucionar algo
+							imediato e
+							específico.</p>
+						<aside class="box" data-aos="zoom-in">
+							<div class="row">
+								<p><i class="fas  fa-exclamation-circle" style="color:#de8245;"></i>&nbsp;&nbsp;
+									<strong>Características da pesquisa aplicada:</strong><br />
+									Geralmente envolve a solução de problemas locais ou de um grupo de pessoas.
+									Se baseia em teorias científicas para que a aplicação final seja bem-sucedida.
+
+								</p>
+							</div>
+						</aside>
+					</article>
+				</div>
+			</section>
+			<!--End section 3 naturezapesquisa-->
+
+
+			<!-- Star Section four -->
+			<section id="abordagens" class="spotlights">
+				<section role="article">
+					<div class="inner">
+						<figure>
+							<span class="image fit">
+								<img src="images/approach2.png"></span>
+							<figcaption>&nbsp;Fonte: <a
+									href="https://storyset.com/illustration/studying/bro">Storyset</a></figcaption>
+
+						</figure>
+					</div>
+					<div class="content" data-aos="zoom-in">
+						<div class="inner">
+							<header class="major">
+								<h3>Abordagens</h3>
+							</header>
+							<p>A abordagem da pesquisa está muito relacionada ao tipo de método. Por exemplo, o método
+								indutivo de observação
+								pode fornecer uma gama de material não quantificável; já o método hipotético-dedutivo
+								permite que a pesquisa
+								seja elaborada para coletar dados que podem ser comparados. <br /><br />
+								A pesquisa possui dois tipos de abordagem:
+							</p>
+							<div class="row justify-content-center mt-3">
+								<div class="col-12">
+									<details
+										aria-label="para ler a descrição do método indutivo é necessário clicar neste botão">
+										<summary>Abordagem Qualitativa<i class="fas fa-arrow-alt-circle-down"
+												style="color:#fff;padding-left: 5px;"
+												aria-label="clique para ler o conteúdo que descreve este item"></i>
+										</summary>
+										<p>Durante a pesquisa qualitativa, a maior preocupação do cientista deve ser com
+											o
+											aprofundamento da
+											observação do fenômeno estudado. Neste tipo de pesquisa, valoriza-se o
+											significado do problema para os
+											sujeitos estudados. Não há, assim, a preocupação em encontrar padrões de
+											comportamento ou repetição de
+											fenômenos. Como será visto mais adiante, requer procedimentos próprios para
+											sua
+											realização. <br /><br />
+											Ainda que muito utilizada e aceita no mundo científico, a pesquisa
+											qualitativa é
+											criticada pela
+											subjetividade e pela possibilidade de envolvimento emocional do pesquisador.
+											<br /><br />Por
+											permitir a compreensão
+											e explicação da dinâmica das relações sociais, este tipo de abordagem é
+											muito
+											utilizada nas Ciências
+											Sociais.<br /><br />
+											Como listado por Gerhardt e Silveira (2009, p. 32), deve-se considerar
+											alguns
+											riscos e limitações da
+											pesquisa qualitativa:
+										<ul>
+											<li>Risco de que a reflexão exaustiva acerca das notas de campo possa
+												representar uma tentativa de
+												dar conta da totalidade do objeto estudado, além de controlar a
+												influência
+												do observador sobre o objeto de estudo. </li>
+											<li>Falta de detalhes sobre os processos através dos quais as conclusões
+												foram
+												alcançadas.</li>
+											<li>Falta de observância de aspectos diferentes sob enfoques diferentes.
+											</li>
+											<li>Certeza do próprio pesquisador com relação a seus dados. </li>
+											<li>Sensação de dominar profundamente seu objeto de estudo. </li>
+											<li>Envolvimento do pesquisador na situação pesquisada, ou com os sujeitos
+												pesquisados.</li>
+										</ul>
+
+									</details>
+									<details
+										aria-label="para ler a descrição do método hipotético-dedutivo é necessário clicar neste botão">
+										<summary>Abordagem Quantitativa <i class="fas fa-arrow-alt-circle-down"
+												style="color:#fff;padding-left: 5px;" tabindex="0"></i></summary>
+										<p>A pesquisa quantitativa usa a linguagem matemática para revelar e descrever
+											as
+											causas de um fenômeno,
+											ou seja, busca-se um padrão para a observação de determinado fenômeno. Por
+											possibilitar a mensuração,
+											também é possível que os fenômenos sejam comparáveis. <br />
+											Outra vantagem da abordagem quantitativa é que os resultados podem ser
+											extrapolados como representação
+											do padrão de comportamento de toda uma população ou fenômeno biológico.
+
+										</p>
+									</details> <!-- fim da área de detalhes-->
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--start table abordagens aside-->
+
+				<div class="inner">
+					<aside>
+						<div class="table-responsive">
+							<p>Quadro resumo das abordagens da pesquisa</p>
+							<!--Table-->
+							<table class="table" style="max-width:100%;">
+
+								<!--Table head-->
+								<thead>
+									<tr>
+										<th class="th" style="background-color:transparent;font-size: 16px;">ASPECTO
+										</th>
+										<th class="th" style="background-color:transparent;font-size: 16px;">PESQUISA
+											<br />QUALITATIVA
+										</th>
+										<th class="th" style="background-color:transparent;font-size: 16px;">PESQUISA
+											<br />QUANTITATIVA
+										</th>
+									</tr>
+								</thead>
+								<!--Table head-->
+
+								<!--Table body-->
+								<tbody>
+									<tr>
+										<th scope="row" style="font-size: 16px;text-align: center;">Enfoque na
+											interpretação <br />do objeto
+										</th>
+										<td style="font-size: 16px;text-align: center;">Menor
+										</td>
+										<td style="font-size: 16px;text-align: center;">Maior</td>
+									</tr>
+									<tr>
+										<th scope="row" style="font-size: 16px;text-align: center;">Importância do
+											contexto <br />do objeto pesquisado </th>
+										<td style="font-size: 16px;text-align: center;">Menor </td>
+										<td style="font-size: 16px;text-align: center;">Maior</td>
+									</tr>
+									<tr>
+										<th scope="row" style="font-size: 16px;text-align: center;"> Proximidade do
+											pesquisador <br />em relação aos <br />fenômenos
+											estudados </th>
+										<td style="font-size: 16px;text-align: center;">Menor</td>
+										<td style="font-size: 16px;text-align: center;">Maior</td>
+
+									</tr>
+									<tr>
+										<th scope="row" style="font-size: 16px;text-align: center;">Alcance do estudo
+											<br />no tempo
+										</th>
+										<td style="font-size: 16px;text-align: center;">Instantâneo</td>
+										<td style="font-size: 16px;text-align: center;">Intervalo <br />maior</td>
+
+									</tr>
+									<tr>
+										<th scope="row" style="font-size: 16px;text-align: center;">Quantidade de fontes
+											<br />dos dados
+										</th>
+										<td style="font-size: 16px;text-align: center;">Uma</td>
+										<td style="font-size: 16px;text-align: center;">Várias</td>
+									</tr>
+									<tr>
+										<th scope="row" style="font-size: 16px;text-align: center;">Ponto de vista do
+											<br />pesquisador
+										</th>
+										<td style="font-size: 16px;text-align: center;">Externo <br />à organização</td>
+										<td style="font-size: 16px;text-align: center;">Interno <br />à organização
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" style="font-size: 16px;text-align: center;">Quadro teórico
+											<br />e hipóteses
+										</th>
+										<td style="font-size: 16px;text-align: center;">Definidas <br />rigorosamente
+										</td>
+										<td style="font-size: 16px;text-align: center;">Menos <br />estruturadas
+										</td>
+									</tr>
+								</tbody>
+								<!--Table body-->
+
+							</table>
+							<!--Table-->
+							<p>Fonte: adaptado de Gerhardt e Silveira (2009, p. 32)
+							</p>
+						</div>
+					</aside>
+					<!--end table abordagens aside-->
+				</div>
+
+			</section>
+			<!--End Section four Abordagens-->
+			<!--Start Section five tipos de Pesquisa-->
+			<section id="tipospesquisa">
+				<div class="inner">
+					<header class="major">
+						<h3 data-aos="zoom-in-right">Tipos de Pesquisa
+						</h3>
+					</header>
+
+					<p>Uma outra forma de definir a pesquisa é pelos objetivos finais, isto é,
+						que tipo de resultado será apresentado ao término da pesquisa?
+					</p>
+					<p>Os tipos de pesquisa podem ser divididos em três grandes grupos: <strong>pesquisa experimental,
+							pesquisa descritiva e pesquisa exploratória.</strong>
+					</p>
+					<ul class="nav nav-tabs " style="background-color:transparent;">
+						<li class="nav-item active" style="background-color:transparent;"><a data-toggle="tab"
+								class="nav-link active" href="#home">Experimental</a></li>
+						<li class="nav-item" style="background-color:transparent;"><a data-toggle="tab" class="nav-link"
+								href="#menu1">Descritiva</a></li>
+						<li class="nav-item" style="background-color:transparent;"><a data-toggle="tab" class="nav-link"
+								href="#menu2">Exploratória</a></li>
+					</ul>
+
+					<div class="tab-content">
+						<div id="home" class="tab-pane container active">
+							<h3>Pesquisa experimental</h3>
+							<p>O objetivo final deste tipo de estudo é explicar por que determinado fenômeno acontece.
+								Em quase todos os estudos que usam esse tipo de pesquisa, é necessário criar modelos
+								para explicar o fenômeno. Por esse motivo a pesquisa experimental costuma estar
+								associada a laboratórios.
+							</p>
+						</div>
+						<div id="menu1" class="tab-pane container fade">
+							<h3>Pesquisa descritiva</h3>
+							<p>Como o próprio nome diz, o objetivo deste tipo de pesquisa é descrever determinado
+								fenômeno. Apesar de parecer simples, a descrição do fenômeno deve ser feita a partir de
+								dados coletados de forma criteriosa e sistematizada a ponto de comprovar que a descrição
+								corresponde ao fenômeno relacionado e não a uma interpretação pessoal do cientista.
+							</p>
+						</div>
+						<div id="menu2" class="tab-pane container fade">
+							<h3>Pesquisa exploratória</h3>
+							<p>Pesquisas do tipo exploratória têm como objetivo proporcionar maior apropriação e
+								conhecimento do problema, delimitando-o e criando possibilidades mais factíveis de
+								intervenção. Em muitos casos, instrumentos metodológicos usados em pesquisas descritivas
+								também podem ser usados em estudos exploratórios, o que vai mudar é o destino e a
+								interpretação que o cientista dará ao dado coletado. </p>
+						</div>
+					</div>
+
+
+			</section>
+			<!--End section five tipospesquisa-->
+
+			<!--Inicio da section six procedimentos da pesquisa-->
+			<section id="procedimentospesquisa">
+				<div class="inner">
+					<header class="major">
+						<h3 data-aos="zoom-in">Procedimentos da Pesquisa</h3>
+					</header>
+					<p>Já mostramos as dimensões e os limites das diferentes formas de fazer pesquisa. A partir de agora
+						vamos
+						abordar as diversas técnicas, ferramentas e instrumentos para coletar dados e obter resultados.
+					</p>
+					<!--baixar pdf-->
+
+					<div class="row justify-content-center">
+
+						<div class="row col-md-8 box justify-content-center">
+							<div class="col">
+								<p> Recomendamos que você baixe o texto
+									<a href="https://educare.fiocruz.br/resource/show?id=DxYOXy6d"> <span
+											style="background-color: #de8245; color: #FFF; padding: 2px;">Procedimentos
+											da Pesquisa</span></a> para leitura e entendimento do tema.
+									Observe que a escolha do procedimento deve sempre ser feita após a consolidação da
+									pergunta de pesquisa,
+									pois é por meio deles que as perguntas serão respondidas. <br /><br />
+									<i class="atent fas fa-download" style="color:#de8245;"></i>
+									O texto está disponível para download através deste <a
+										hre="https://educare.fiocruz.br/resource/show?id=DxYOXy6d">link na Plataforma
+										Educare</a>.
+								</p>
+
+
+							</div>
+							<div class="col-sm justify-content-center" style="align-items: center; text-align: center;">
+								<!--capa do livro-->
+								<figure>
+
+									<span class="image-capa">
+										<a href="https://educare.fiocruz.br/resource/show?id=DxYOXy6d">
+											<img src="images/pdf_cover.png" style="max-width:100%"
+												alt="Capa do arquivo entitulado procedimentos da pesquisa"
+												data-position="center center"></a>
+									</span>
+
+								</figure>
+								<p class="source text-center">Fonte: <a href="#" target="_blank">Educare</a>.</p>
+								<!--Fim do download pdf-->
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</section>
+			<!--Fim da Section procedimentos da pesquisa-->
+			<!--start section seven instumentos-->
+			<section id="instrumentos" class="spotlights">
+				<section role="article">
+
+					<figure>
+						<span class="image fit"><img src="images/img_data.jpg"
+								alt="imagem com destaque para uma mão segurando uma caneta azul anotando os dados descritivos da coleta numa etiqueta fixada no tubo de vidro"
+								data-position="center center" /></span>
+						<figcaption>&nbsp;Fonte: <a href="https://www.fiocruzimagens.fiocruz.br">Banco de Imagens
+								Fiocruz</a>
+						</figcaption>
+					</figure>
+
+					<div class="content" data-aos="zoom-in">
+						<div class="inner">
+							<header class="major">
+								<h3>Instumentos de Coleta de Dados</h3>
+							</header>
+							<p>Continuamos trilhando nosso caminho em busca de escolher a melhor maneira de responder a
+								nossa pergunta através de resultados confiáveis.
+								Já identificamos procedimentos que podem ser feitos para responder a nossa pergunta, mas
+								cada um deles é feito de várias partes e etapas onde acontecem a coleta de dados.
+							</p>
+							<p>Alguns procedimentos são únicos e têm ferramentas quase exclusivas de coleta de dados,
+								como é o caso das pesquisas experimentais que possuem seus próprios modelos
+								experimentais. Outros, porém, têm o objetivo bem definido, mas permitem que vários
+								instrumentos sejam usados para coletar dados. Ou seja, o instrumento de coleta de dados
+								não pode nem deve ser usado descolado de uma estratégia maior (procedimentos), pois só
+								entendendo a estratégia, o instrumento de coleta de dados pode ser escolhido e
+								preparado.
+							</p>
+						</div>
+
+
+				</section>
+
+				<section id="caixas">
+					<div class="inner">
+						<div class="container" style="padding-top: 1em;">
+							<p>Mas para escolher o instrumento mais adequado a sua pesquisa, você deve se perguntar:</p>
+						</div>
+						<div class="row col-12 justify-content-center">
+							<div class="col-sm">
+								<div class="box">
+									<h4>O que coletar? </h4>
+									<p>Quais os dados e de que tipo eu preciso?</p>
+								</div>
+							</div>
+							<div class="col-sm">
+								<div class="box">
+									<h4>Com quem coletar? </h4>
+									<p>Quem são os indivíduos/instituições que têm os dados? Onde eles estão?</p>
+								</div>
+
+							</div>
+							<div class="col-sm">
+								<div class="box">
+									<h4>Como coletar?</h4>
+									<p>Que tipo de instrumento vai me fornecer os dados que preciso? </p>
+								</div>
+							</div>
+
+						</div>
+
+
+						<div class="row justify-content-center" style="max-width:100%">
+							<div class="row col-md-8 box justify-content-center" style="max-width:100%">
+								<div class="col-sm">
+									<p>
+										Recomendamos que você baixe o texto
+										<a href="https://educare.fiocruz.br/resource/show?id=TblS3-b6">
+											<span
+												style="background-color: #de8245; color: #FFF; padding: 2px;">Instrumentos
+												de Coleta de Dados</span></a>
+										para leitura e entendimento do tema.
+
+										<br /><br /><i class="fas fa-download" style="color:#de8245;"></i>&nbsp;O texto
+										está disponível para download através deste
+										<a href="https://educare.fiocruz.br/resource/show?id=TblS3-b6">
+											link na Plataforma Educare</a>.
+								</div>
+								<div class="col-sm justify-content-center"
+									style="align-items: center; text-align: center;">
+									<!--capa do livro-->
+									<figure>
+										<span class="image-capa">
+											<a href="https://educare.fiocruz.br/resource/show?id=TblS3-b6">
+												<img src="images/capa_coleta.png" style="max-width:100%"
+													alt="imagem que ilustra a capa do texto para instrumento de coleta"
+													data-position="center center">
+											</a>
+										</span>
+										<figcaption>Fonte: <a href="https://educare.fiocruz.br/resource/show?id=TblS3-b6">Educare</a></figcaption>
+									</figure>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--end section caixas-->
+				<!--start section download do pdf-->
+				<!--   <section id="asideinstrumento" class="spotlights">          
+                <section role="article">                   
+                    <div class="content" data-aos="zoom-in">
+                        <div class="inner">
+                            <header class="major">
+                                <h3><i class="fas fa-arrow-circle-right"></i>&nbsp;Atenção: Baixar Instrumento</h3>
+                            </header>
+                            <p>                             
+                                   Recomendamos que você baixe o <strong>texto Instrumentos de Coleta de Dados</strong>, para conhecer
+                                    alguns desses instrumentos.                    
+                                    <br /><b>Falta o instrumento</b>
+                                    
+                            </p>
+                        </div>                
+                    </div>
+                    <figure><span class="image fit">
+                        <img src="images/Download2.png">
+                        <figcaption>Fonte:<a href="https://storyset.com/web">Storyset</a></figcaption>
+                    </span>
+                </figure>
+                </section>
+            </section> -->
+
+			</section>
+			<!--end section seven -->
+
+			<!-- start section eight tecnicas de analise -->
+			<section id="tecnicas" class="spotlights">
+				<section role="article">
+					<figure>
+						<span class="image fit"><img src="images/Datareport.png"></span>
+						<figcaption>&nbsp;Fonte: <a href="https://storyset.com/people">Storyset</a></figcaption>
+					</figure>
+					<div class="content" data-aos="zoom-in">
+						<div class="inner">
+							<header class="major">
+								<h3 data-aos="zoom-in">Técnicas de Análise de Dados
+								</h3>
+							</header>
+							<p>Alguns procedimentos e instrumentos de pesquisa geram dados em forma de texto, como
+								entrevistas,
+								questionários, documentos etc., sendo necessário a aplicação de técnicas que mostrem o
+								fenômeno que
+								está sendo investigado.
+								Destacaremos aqui duas técnicas para análises de dados textuais:<strong> a análise de
+									conteúdo e a
+									análise do discurso.</strong>
+							</p>
+							<div style="max-width: 100%;">
+								<div class="row justify-content-center">
+									<div class="col-sm-10">
+										<details>
+											<summary>Análise de
+												conteúdo<i class="fas fa-arrow-alt-circle-down"
+													style="color:#fff;padding-left: 5px;"></i></summary>
+											<p>
+												A técnica de análise de conteúdo tem Laurence Bardin e Cecilia Minayo
+												como referências. Em
+												seu clássico Análise do Conteúdo (1979), Bardin afirma que a técnica é:
+											</p>
+
+											<blockquote>“Um conjunto de técnicas de análise de comunicação visando a
+												obter, por
+												procedimentos sistemáticos e objetivos de descrição do conteúdo das
+												mensagens, indicadores
+												(quantitativos ou não) que permitam a inferência de conhecimentos
+												relativos às condições de
+												produção/recepção destas mensagens” <cite>(Bardin, 1979:42)</cite>.
+											</blockquote>
+
+											<p>Já <cite>Minayo</cite>, complementa essa ideia afirmando que a análise do
+												conteúdo permite
+												separar o que é intuição e subjetividade do que é confirmação de
+												hipótese, confiando, assim, o
+												caráter científico da técnica.
+												Para que isso seja possível, quem faz a pesquisa deve separar a
+												atividade em três etapas:</p>
+
+											<ul>
+												<li>Pré-análise, quando acontece um contato minucioso com o material a
+													ser analisado.
+												</li>
+												<li>Exploração do Material, quando o texto passa por uma análise de
+													contagem, classificação,
+													e outros tratamentos. </li>
+												<li>Tratamento dos resultados, quando os dados obtidos na etapa anterior
+													são tratados de
+													forma estatística a fim de se revelar o fenômeno estudado.
+												</li>
+											</ul>
+
+										</details>
+									</div>
+								</div>
+
+								<div class="row justify-content-center">
+									<div class="col-sm-10">
+										<details>
+											<summary>Análise do discurso <i class="fas fa-arrow-alt-circle-down"
+													style="color:#fff; padding-left: 5px;"></i></summary>
+											<p>Não há um consenso que defina a técnica de análise do discurso. Alguns
+												autores consideram que
+												a análise do discurso é uma derivação da análise do conteúdo, outros uma
+												continuação.
+												<br /><br />
+												Em suma, a análise do discurso se propõe a fazer uma análise mais
+												sistêmica do texto,
+												considerando o contexto histórico-político-social, as condições dos
+												autores, os símbolos e
+												sentidos linguísticos (intencionalidade das palavras). É comum que,
+												inclusive, as reações físicas do participante da pesquisa sejam
+												registradas e
+												consideradas durante a análise.
+												<br /><br />
+												Na prática, a análise do discurso é útil para quem não busca
+												descrever ou explicar um fenômeno, mas sim estabelecer uma crítica do
+												que já existe.
+												Nesta técnica, busca-se desvendar os mecanismos de dominação que se
+												escondem sob a
+												linguagem, não se tratando nem de uma teoria descritiva, nem
+												explicativa, mas com o intuito
+												de constituir uma proposta crítica que problematiza as formas de
+												reflexão anteriormente
+												estabelecidas.
+												<br /><br />
+												O discurso pode ser analisado a partir de coletas de dados de fontes
+												escritas ou orais,
+												realizadas tanto em entrevistas, quanto em pesquisas documentais,
+												histórias de vida, dentre
+												outras que sejam passíveis de se analisar o contexto, por meio de quatro
+												etapas:
+											</p>
+											<ul>
+												<li>
+													Análise das palavras do texto – separando as palavras de acordo com
+													as classes
+													gramaticais (substantivos, adjetivos, verbos e advérbios).
+
+												</li>
+												<li>
+													Análise da formação das frases.
+												</li>
+												<li>
+													Formação de uma rede semântica que considere o contexto social e a
+													gramática.
+												</li>
+												<li>Contextualização social do texto.
+												</li>
+											</ul>
+											<p>Este tipo de análise é útil para se compreender como circulam os
+												conhecimentos, ações e
+												demais fenômenos sociais em contextos específicos.
+											</p>
+										</details>
+
+									</div>
+								</div>
+
+
+							</div>
+							<!--       <div class="row">
+                            <button class="button primary accordion" tabindex="0" aria-labelid="Botão Avaliaçãopor pares">Análise de
+                                conteúdo &nbsp;<i class="fas fa-plus" style="color:#de8245;"></i></button>
+                            <div class="panel">
+                                
+                            </div>
+            
+                            <button class="button primary accordion" tabindex="0"
+                                aria-labelid="Botão Avaliação por revistas">Análise do discurso&nbsp;<i class="fas fa-plus"
+                                    style="color:#de8245;"></i></button>
+                            <div class="panel">
+                                
+                            </div>
+                        </div> -->
+
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<section id="analise">
+				<div class="inner">
+					<header>
+						<h4>Análise de Dados Numéricos</h4>
+					</header>
+					<p>Existe uma tendência a achar que números são mais confiáveis, provavelmente, por uma contaminação
+						das
+						ciências exatas e suas leis imutáveis. Nas ciências biológicas, da saúde e sociais, existem
+						vários
+						procedimentos quantitativos, mas os números só são confiáveis se forem oriundos de desenhos
+						experimentais bem-feitos, bem coletados e bem analisados.
+					</p>
+					<hr />
+					<header>
+						<h4>Estratégias Estatísticas</h4>
+					</header>
+					<p>Cada vez mais as estratégicas estatísticas estão ganhando visibilidade na ciência.</p>
+					<div class="box-quote">
+						<p><span class="image left"><img src="images/quote.png"
+									alt="Imagem com um símbolo que remete uma citação" hspace="10px" /></span>
+							“Os processos estatísticos permitem obter, de conjuntos complexos, representações simples e
+							constatar se
+							essas verificações simplificadas têm relações entre si. Assim, o método estatístico
+							significa redução de
+							fenômenos sociológicos, políticos, econômicos etc. a termos quantitativos e a manipulação
+							estatística,
+							que permite comprovar as relações dos fenômenos entre si, e obter generalizações sobre sua
+							natureza,
+							ocorrência ou significado. Exemplos: verificar a correlação entre nível de escolaridade e
+							número de
+							filhos; pesquisar as classes sociais dos estudantes universitários e o tipo de lazer
+							preferido pelos
+							estudantes de 1º e 2º graus."
+						</p>
+						<cite>
+							<p class="quote-autor" style="float:right;">(Marconi e Lakatos, 2003, p.108)</p>
+						</cite>
+					</div>
+					<p>Neste sentido, o método estatístico é uma forma de descrição quantitativa da sociedade ou do
+						fenômeno
+						investigado. Porém,
+					</p>
+					<div class="box-quote">
+						<p><span class="image left"><img src="images/quote.png"
+									alt="Imagem com um símbolo que remete uma citação" hspace="10px" /></span>
+							“a estatística pode ser considerada mais do que apenas um meio de descrição racional, é,
+							também, um
+							método de experimentação e prova, pois é considerado um método de análise.”
+						</p>
+						<cite>
+							<p class="quote-autor" style="float:right;">(Marconi e Lakatos, 2003)</p>
+						</cite>
+					</div>
+					<div class="boxx" data-aos="zoom-in">
+						<h2>Saiba Mais <i class="fas fa-plus" style="color:#de8245;"></i></h2>
+
+						É muito comum que as interpretações dos dados e as análises estatísticas sejam apresentadas de
+						forma
+						gráfica e visual. Assim, os recursos como gráfico de barra, histogramas e diagramas circulares
+						são
+						sempre bem-vindos para representar
+						de forma compreensível e simples os resultados de investigação dos fenômenos. Abaixo separamos
+						alguns
+						exemplos:</p>
+					</div>
+					<section id="graficos">
+						<div class="row justify-content-center">
+							<div class="myslider col-6 regular slider justify-content-center">
+
+								<div class="col align-self-center"
+									style="align-items: center;padding-top: 1%;max-height: auto;">
+									<h3>Diagrama Circular</h3>
+									<img src="images/imagens-03.png" style="max-width: 100%;">
+									<p>O <strong>diagrama circular</strong> é uma forma de representação de diferentes
+										categorias onde cada uma delas é apresentada em um tamanho que representa sua
+										proporção frente ao todo.
+										<br /><br />
+										Quando representado como um circulo completo, também recebe o nome de gráfico em
+										pizza, muito comum para representar porcentagens ou frações.
+									</p>
+
+								</div>
+								<div class="col align-self-center"
+									style="align-items: center; padding-top: 1%;max-height: auto;">
+									<h3>Gráfico de Barra</h3>
+									<img src="images/imagens-03-1.png" style="max-width: 100%;">
+									<p>O <strong>gráfico de barras</strong> é útil para comparar diferentes grupos, a
+										partir da mensuração de variáveis. Desta forma, obrigatoriamente, em um eixo
+										deve ser apresentado os grupos que estão sendo comparados e, os valores
+										mensurados da varável em questão, no outro.
+									</p>
+								</div>
+								<div class="col align-self-center"
+									style="align-items: center; padding-top: 1%;max-height: auto;">
+									<h3>Histograma</h3>
+									<img src="images/imagens-04.png" style="max-width: 100%;">
+									<p>O <strong>histograma</strong> é uma variação do gráfico de barra e é utilizado
+										para mostrar distribuição de frequência de determinado fenômeno.
+										<br /><br />
+										Geralmente, no eixo y é mostrado a contagem de acontecimentos do fenômeno e no
+										eixo x, os intervalos de classe do fenômeno estudado.
+									</p>
+
+								</div>
+								<div class="col align-self-center"
+									style="align-items: center;padding-top: 1%;max-height: auto;">
+									<h3>Representação por Densidade de Ocorrência</h3>
+									<img src="images/imagens-05.png" style="width:100%;">
+									<p>A representação por <strong>densidade</strong> geralmente é feita por meio de
+										cores ou gradação de cor para representar a quantidade de vezes que um fenômeno
+										foi identificado. Quanto mais forte a cor mostrada, mais vezes o fenômeno foi
+										observado; quanto mais fraca a cor, menos o fenômeno foi observado.
+									</p>
+								</div>
+
+
+							</div>
+						</div>
+					</section>
+
+					<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+					<p>&nbsp;</p>
+				</div>
+
+			</section>
+
+			<!--fim do teste slider-->
+			<section id="qualidade" class="spotlights">
+				<section id="detalhes" role="article">
+					<figure>
+						<span class="image fit"><img src="images/Class2_5.jpg"
+								alt="Diagrama que representa todas as etapas da elaboração de um projeto"
+								data-position="center center" /></span>
+						<figcaption>&nbsp; Fonte: <a href="https://www.fiocruzimagens.fiocruz.br">Banco de Imagens
+								Fiocruz</a>
+						</figcaption>
+					</figure>
+					<div class="content">
+
+						<div class="inner">
+							<header class="major">
+								<h3>Qualidade dos Estudos</h3>
+							</header>
+							<p>
+								Para cada tipo de estudo existe uma forma de verificação de sua qualidade.
+								Seja um estudo em laboratório ou uma revisão sistemática, existem protocolos que podem
+								ser seguidos
+								conferindo maior fidedignidade, clareza, relevância, verdade e principalmente
+								reprodutibilidade dos estudos.</p>
+							<p>
+								O uso das ferramentas de verificação da qualidade dos estudos pode variar de acordo com
+								o tipo de estudo e o procedimento
+								a ser utilizado, por exemplo, instruções de trabalho validadas, procedimentos
+								operacionais padrão, listas de verificação. </p>
+							<p>
+								Além dos procedimentos, também é possível garantir a qualidade certificando e validando
+								os equipamentos utilizados na pesquisa,
+								de acordo com órgãos regulamentadores.</p>
+							<p>
+								Para evitar erros, muitas iniciativas de protocolos padrão foram criadas. Esses
+								protocolos não só garantem a
+								qualidade científica dos resultados gerados, como facilitam a publicação dos dados já
+								que as revistas científicas
+								os reconhecem como ferramentas de qualidade. </p>
+
+						</div>
+					</div>
+
+				</section>
+				<section id="continuaanterior">
+					<section class="container">
+						<div class="inner">
+							<p>Confira algumas ferramentas úteis para verificação da qualidade de estudos em ciências
+								sociais e da
+								saúde.
+							</p>
+							<div class="row justify-content-center mt-3">
+								<div class="col-12 col-lg-6">
+									<details
+										aria-label="para ler a descrição do método dedutivo é necessário clicar neste botão">
+										<summary>STROBE <i class="fas fa-arrow-alt-circle-down"
+												style="color:#fff;padding-left: 5px;"
+												aria-label="clique para ler o conteúdo que descreve este item"></i>
+										</summary>
+										<p>
+											(<i>Strengthening the Reporting of Observational Studies in
+												Epidemiology</i>)<br />
+											O STROBE é uma lista de verificação composta por 22 itens feita
+											colaborativamente por
+											epidemiologistas,
+											estatísticos, editores de revistas científicas entre outros profissionais
+											com o intuito de
+											guiar o
+											pesquisador que pretende realizar estudos observacionais. Saiba mais em
+											<a
+												href="https://www.strobe-statement.org/">https://www.strobe-statement.org/</a>
+
+										</p>
+									</details>
+									<details
+										aria-label="para ler a descrição do método indutivo é necessário clicar neste botão">
+										<summary>CONSORT<i class="fas fa-arrow-alt-circle-down"
+												style="color:#fff;padding-left: 5px;"
+												aria-label="clique para ler o conteúdo que descreve este item"></i>
+										</summary>
+										<p>
+											(<i>Consolidated Standards of Reporting Trials</i>)<br />
+											Feita pelo grupo CONSORT, a lista de verificação é composta por 25 itens e
+											um diagrama de
+											fluxo que
+											contém o mínimo de informações sobre desenho experimental, análise e
+											interpretação de
+											resultados de
+											ensaios clínicos. Saiba mais em <a
+												href="http://www.consort-statement.org/">http://www.consort-statement.org/</a>
+
+										</p>
+									</details>
+									<details
+										aria-label="para ler a descrição do método hipotético-dedutivo é necessário clicar neste botão">
+										<summary>ARRIVE<i class="fas fa-arrow-alt-circle-down"
+												style="color:#fff;padding-left: 5px;"
+												aria-label="clique para ler o conteúdo que descreve este item"></i>
+										</summary>
+										<p>
+											(<i>Animal Research Reporting of In Vivo Experiments</i>)<br />
+											O guia ARRIVE tem não só o objetivo de ajudar na construção de protocolos
+											experimentais com
+											o uso de
+											animais não humanos, como também garante que esses animais serão usados de
+											forma ética. A
+											lista de
+											verificação é composta por 10 passos que ajudam o cientista a organizar o
+											projeto que
+											envolve animais.
+											Saiba mais em <a
+												href="https://arriveguidelines.org/">https://arriveguidelines.org/</a>
+
+										</p>
+									</details>
+									<details
+										aria-label="para ler a descrição do método hipotético-dedutivo é necessário clicar neste botão">
+										<summary>AMSTAR/PRISMA<i class="fas fa-arrow-alt-circle-down"
+												style="color:#fff;padding-left: 5px;"
+												aria-label="clique para ler o conteúdo que descreve este item"></i>
+										</summary>
+										<p>
+
+											Revisões sistemáticas têm o potencial de embasar novas políticas públicas de
+											saúde e mudar a
+											prática
+											assistencial. Para garantir que a Revisão seja corretamente realizada, o
+											cientista pode usar
+											alguns
+											protocolos como:</p>
+										<p> <b>AMSTAR</b>
+											(Assessment of Multiple Systematic Reviews). Saiba mais em: <a
+												href="https://amstar.ca/index.php">
+												https://amstar.ca/index.php</a></p>
+										<p>
+											<b>PRISMA</b>
+											(Preferred Reporting Items for Systematic Reviews and Meta-Analyses). Saiba
+											mais em:
+											<a
+												href="http://www.prisma-statement.org/">http://www.prisma-statement.org/</a>
+										</p>
+
+									</details>
+									<!-- fim da área de detalhes-->
+								</div>
+							</div>
+
+						</div>
+					</section>
+				</section>
+
+			</section>
+			<section id="resumo">
+				<section id="resumotexto">
+					<section class="container">
+						<div class="inner">
+							<div class="content">
+								<div class="inner">
+									<header class="major">
+										<h3 data-aos="zoom-in" style="margin-top: 1em;">Resumo</h3>
+									</header>
+									<p>Chegamos ao fim da aula. Antes de seguir , recomendamos que você assista ao vídeo
+										com o resumo desta aula e aproveite para avaliar os seus conhecimentos :
+									</p>
+									<!--Vídeo-->
+
+
+									<div class="embed-responsive embed-responsive-16by9 mt-3 mb-5">
+										<video controls poster="images/thumb_video.png" width="320" height="300"
+											preload="none" controls>
+											<source src="https://educare.fiocruz.br/file-storage/QnrJX1Fa"
+												type="video/mp4">
+											Seu navegador não suporta vídeos em HTML5.
+											Acesse o vídeo através deste link <a
+												href="https://educare.fiocruz.br/resource/show?id=pyPNIq_L">https://educare.fiocruz.br/resource/show?id=pyPNIq_L.</a>
+
+										</video>
+										<!--<iframe src="https://educare.fiocruz.br/file-storage/v6PUYdXh" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="320" height="320" frameborder="0"></iframe>
+                                -->
+									</div>
+
+								</div>
+							</div>
+							<section id="atividade">
+								<div style="border:0;margin:2em 0; border-bottom: solid 1px rgba(212, 212, 255, 0.1);">
+								</div>
+								<div class="inner">
+									<header class="major">
+										<h3 data-aos="zoom-in">Atividade</h3>
+									</header>
+									<div class="row justify-content-center">
+										<div class="col-sm">
+											<span class="image fit"><img src="images/exercise.png"></span>
+										</div>
+										<div class="col-8 exercise">
+											<iframe
+												src="https://educare.fiocruz.br/h5p-content/embed/?contentId=3051614359"
+												width="1090" height="1025" frameborder="0"
+												allowfullscreen="allowfullscreen"></iframe>
+											<iframe
+												src="https://educare.fiocruz.br/h5p-content/embed/?contentId=2826339979"
+												width="1090" height="1025" frameborder="0"
+												allowfullscreen="allowfullscreen"></iframe>
+										</div>
+									</div>
+									<!--fim da row-->
+
+								</div>
+								<!--fim do container-->
+							</section>
+							<hr />
+							<div class="row">
+								<div class="style2" style="margin-right: 5%;">
+									<ul class="actions">
+										<li><a href="aula1.html" class="button">AULA ANTERIOR</a></li>
+										<li><a href="aula3.html" class="button primary">PRÓXIMA AULA<i
+													class="fas fa-arrow-circle-right"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+				</section>
+			</section>
+
+		</div>
+
+
+		<div style="text-align:right;margin-right: 1em;">
+			<a href="#" class="back-to-top serie3" style="text-decoration: none;"><i class="fa fa-2x fa-chevron-up"
+					style="text-decoration: none;"></i></a>
+		</div>
+		<!-- Footer -->
+		<footer id="footer">
+			<div>&nbsp;</div>
+			<div class="row justify-content-center pb-5">
+				<div class="col-lg-2">
+					<a href="https://campusvirtual.fiocruz.br/portal/" target="_blank"><img class="mx-auto d-block"
+							src="images/logo-cv-white.svg" alt="Logo do Campus Virtual da Fiocruz"
+							style="max-height:60px;"></a>
+				</div>
+
+				<div class="col-lg-2 justify-content-center pb-5">
+					<a href="https://www.saude.gov.br/sistema-unico-de-saude" target="_blank"><img
+							class="mx-auto d-block" src="images/logo-sus.svg" alt="Logo do SUS"
+							style="max-height:60px;" /></a>
+				</div>
+				<div class="col-lg-2 justify-content-center pb-5">
+					<a href="https://www.gov.br/pt-br" target="_blank"><img class="mx-auto d-block"
+							src="images/logo-governo-federal2.png" alt="Logo do Governo Federal"
+							style="max-height:60px;"></a>
+				</div>
+
+
+			</div>
+			<div class="inner">
+				<ul class="icons">
+					<li><a href="guia.html"><span class="label">Guia do aluno</span></a></li>
+					<li><a href="material.html"><span class="label">Material Complementar</span></a></li>
+					<li><a href="biblio.html"><span class="label">Bibliografia</span></a></li>
+					<li><a href="creditos.html"><span class="label">Créditos</span></a></li>
+
+				</ul>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/main2.js"></script>
+
+	<!-- Biblioteca de JavaScripts-->
+	<script src="../lib/jquery/jquery.min.js"></script>
+	<script src="../lib/jquery/jquery-migrate.min.js"></script>
+	<script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="../lib/easing/easing.min.js"></script>
+	<script src="../lib/aos/aos.js"></script>
+	<script src="../lib/superfish/hoverIntent.js"></script>
+	<script src="../lib/superfish/superfish.min.js"></script>
+	<script src="../lib/magnific-popup/magnific-popup.min.js"></script>
+	<script src="../lib/wow/wow.min.js"></script>
+
+	<!--Ionicons-->
+	<script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
+
+	<!-- Javascripts-->
+	<script src="../js/main.js"></script>
+	<script src="../js/main-timeline.js"></script>
+	<script src="../assets/js/include.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-accessible-dialog-tooltip-aria.js"></script>
+
+
+	<!--Acessibilidade-->
+	<script src="../js/jquery-2.2.1.min.js"></script>
+	<script src="../js/jquery.font-accessibility.min.js"></script>
+
+	<script>
+		$(function Acessibilidade() {
+			/* Botões de Acessibilidade */
+			$('#font-setting-buttons').easyView({
+				container: '#acessibilidade',
+				increaseSelector: '.increase-me',
+				decreaseSelector: '.decrease-me',
+				normalSelector: '.reset-me',
+				contrastSelector: '.change-me'
+			});
+
+		});
+	</script>
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="assets/slick2/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).on('ready', function () {
+			$(".vertical-center-4").slick({
+				dots: true,
+				vertical: true,
+				centerMode: true,
+				slidesToShow: 4,
+				slidesToScroll: 2
+			});
+			$(".vertical-center-3").slick({
+				dots: true,
+				vertical: true,
+				centerMode: true,
+				slidesToShow: 3,
+				slidesToScroll: 3
+			});
+			$(".vertical-center-2").slick({
+				dots: true,
+				vertical: true,
+				centerMode: true,
+				slidesToShow: 2,
+				slidesToScroll: 2
+			});
+			$(".vertical-center").slick({
+				dots: true,
+				vertical: true,
+				centerMode: true,
+			});
+			$(".vertical").slick({
+				dots: true,
+				vertical: true,
+				slidesToShow: 3,
+				slidesToScroll: 3
+			});
+			$(".regular").slick({
+				dots: true,
+				infinite: true,
+				slidesToShow: 1,
+				slidesToScroll: 1
+			});
+			$(".center").slick({
+				dots: true,
+				infinite: true,
+				centerMode: true,
+				slidesToShow: 5,
+				slidesToScroll: 3
+			});
+			$(".variable").slick({
+				dots: true,
+				infinite: true,
+				variableWidth: true
+			});
+			$(".lazy").slick({
+				lazyLoad: 'ondemand', // ondemand progressive anticipated
+				infinite: true
+			});
+		});
+	</script>
+
+	<!-- Função que atualiza os includes do site -->
+	<script>includeHTML();</script>
+
+</body>
+
+</html>
